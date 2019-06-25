@@ -12,7 +12,12 @@ jobs:
       - run:
           name: Fetch Changes
           command: |
-            ssh -o StrictHostKeyChecking=no $SSH_USER@$SSH_HOST 'cd html; git reset --hard; git pull --rebase;'
+            ssh -o StrictHostKeyChecking=no $SSH_USER@$SSH_HOST '
+            cd html;
+            git reset --hard;
+            git pull --rebase;
+            rm ./README.md;
+            cp ./.circleci/ReadMe.md .'
 
 workflows:
   version: 2
