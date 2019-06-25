@@ -1,0 +1,24 @@
+version: 2
+jobs:
+  deploy:
+    machine:
+      enabled: true
+
+    steps:
+      - add_ssh_keys:
+          fingerprints:
+            - "53:77:3a:90:1e:41:d0:2c:31:f5:4a:c5:8e:74:99:06"
+
+      - run:
+          name: Fetch Changes
+          command: |
+            ssh -o StrictHostKeyChecking=no $SSH_USER@$SSH_HOST 'cd html; git reset --hard; git pull --rebase;'
+
+workflows:
+  version: 2
+  deploy:
+    jobs:
+      - deploy:
+          filters:
+            branches:
+              only: master
