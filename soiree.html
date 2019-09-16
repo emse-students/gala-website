@@ -8,49 +8,88 @@
   <meta name="description" content="Afin de célébrer l’entrée dans son troisième siècle d’histoire, ainsi que le diplôme de la promotion 2014, l’École des Mines organise son Gala le 10 février 2019. A cette occasion, les élèves étudiant actuellement à l’École retrouvent les nouveaux diplômés et les anciennes promotions, et rejoignent corps enseignant et personnel administratif pour une soirée de prestige."
   />
 
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
-  <link rel="stylesheet" href="style2019-1.css" type="text/css" />
-  <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
-  <script type="text/javascript" src="js/w3.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="style2020.css" type="text/css" />
+  <script src="js/w3.js"></script>
 </head>
 
 
 <body onresize="resize()" onload="resize()">
 
-  <img class="col-12 hidden-s" id="banner" src="Images/banniere2.png"><!--
---><div w3-include-html="menus/menu_principal.html" id="main"></div><!--
---><div w3-include-html="menus/menu_deroulant.html" class="menuder show-s"></div>
-  <div w3-include-html="menus/sidebar.html" class="col-l-2 col-3 col-m-3 hidden-s" id="side"></div><!--
+  <img class="col-12 hidden-s" id="banner" src="Images/bandeau.png">
 
---><section class="col-l-2 col-3 col-m-3 margin-box hidden-s"></section><!--
---><section class="col-l-10 col-9 col-m-9" id="content">
-    <h1> Soirée </h1>
+<nav class="navbar navbar-center navbar-expand-lg navbar-light bg-light">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-    <p>La soirée de Gala est ouverte à tout le monde. Chaque année, environ 1000 personnes y assistent, dont des personnalités et des étudiants de toute la métropole stéphanoise. </p>
-    <p>Vous aurez accès à 2 salles avec des ambiances différentes :</p>
-    <ul>
-      <li>Électro</li>
-      <li>Jazz</li>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul id="menu_list" class="navbar-nav" style="width: 100%">
+      <li class="nav-item active" style="width: 13%; margin-left: 80px">
+        <a class="nav-link" href="accueil.html">ACCUEIL<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item" style="width: 17%">
+        <a class="nav-link" href="qui_sommes_nous.html">QUI SOMMES NOUS?</a>
+      </li>
+      <li class="nav-item dropdown" style="width: 16%;">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: black;">
+          PROGRAMME
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="diner.html">Dîner</a>
+          <a class="dropdown-item" href="spectacle.html">Spectacle</a>
+          <a class="dropdown-item" href="soiree.html">Soirée</a>
+          <a class="dropdown-item" href="#">Les places</a>
+        </div>
+      </li>
+      <li class="nav-item" style="width: 16%">
+        <a class="nav-link" href="#">BILLETERIE</a>
+      </li>
+      <li class="nav-item" style="width: 20%">
+        <a class="nav-link" href="hotels_acces_navettes.html">HOTELS, ACCES et NAVETTES</a>
+      </li>
+      <li class="nav-item" style="width: 14%">
+        <a class="nav-link" href="#">PARTENAIRES</a>
+      </li>
     </ul>
-    <p>Cette année nous vous proposons également une animation Casino / Poker. Des jetons vous serons remis gratuitement en début de soirée et des récompenses seront attribuées aux meilleurs joueurs.</p>
-    <p>La soirée débute à 23h et s’étale sur 5 heures. Les noms des artistes présents vous seront dévoilés petit à petit sur nos réseaux sociaux.</p>
+  </div>
+</nav>
+    <div id='contenu'>
+      <h1>Soirée</h1>
 
-    <div class="center col-m-12">
-      <!--<img src="Images/soiree1.jpg" class="col-l-5 col-5 col-m-5 img-max-width-640">-->
-      <!--<img src="Images/soiree2.jpg" class="col-l-5 col-5 col-m-5 img-max-width-640">-->
-      <img src="Images/soiree3.jpg" class="col-l-10 col-10 col-m-10 img-max-width-960">
-    </div>
+        <p>
+          La soirée de Gala est ouverte à tout le monde.
+          Chaque année, environ 1000 personnes y assistent, dont des personnalités et des étudiants de toute la
+          métropole stéphanoise.
+        </p>
+        <p>
+          Afin de satisfaire les goûts d’un grand nombre, vous aurez accès à 3 salles avec des ambiances différentes :
+        </p>
+        <ul>
+          <li>Pop / Electro</li>
+          <li>Jazz</li>
+          <li>Activités</li>
+        </ul>
+        <p>
+          La soirée débute à 23h et s’étale sur 5 heures.
+          Le détail des artistes présents lors de la soirée sera dévoilé à l’approche de l’évènement.
+        </p>
+        <p>[Ajouter une photo et les noms des artistes dès qu’on les connait].</p>
+        <p>1 Réservé aux personnes munies d’un ticket dîner + spectacle + soirée<p>
 
+      </div>
 
-
-  </section>
 
 
 </body>
-
 <div w3-include-html="footer/footer.html" id="footer"></div>
-
 <!-- ..........................script...................................... -->
+
+
 
 <script>
   w3.includeHTML();
@@ -58,6 +97,7 @@
 
 <script type="text/javascript" src="js/side_sizing.js"></script>
 <script type="text/javascript" src="js/menuder.js"></script>
+
 
 
 

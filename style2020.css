@@ -1,0 +1,271 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+a {
+    color: #B9853E;
+}
+
+a:hover {
+    color: #6c4c28;
+}
+
+body {
+  margin: auto;
+  position: relative;
+  padding: 0;
+  height: 100%;
+  background-image: url("Images/fond.png");
+}
+
+/* For mobile phones: */
+@media only screen and (max-width: 700px) {
+   .hidden-s{display: none !important;}
+   .font-s-14{font-size: 14 !important;}
+   .show-s{display: block !important;}
+   .col-s-6 {width: 50%;}
+}
+
+@media only screen and (min-width: 700px) and (max-width: 868px) {
+   .hidden-m{display: none !important;}
+   .font-m-14{font-size: 14 !important;}
+}
+
+@media only screen and (min-width: 868px) {
+   .hidden{display: none !important;}
+   .font-18{font-size: 18 !important;}
+}
+
+[class*="col-"] {
+   width: 100%;
+}
+@media only screen and (min-width: 700px) {
+   /* For tablets: */
+   .col-m-1 {width: 8.33%;}
+   .col-m-2 {width: 16.66%;}
+   .col-m-3 {width: 25%;}
+   .col-m-4 {width: 33.33%;}
+   .col-m-5 {width: 41.66%;}
+   .col-m-6 {width: 50%;}
+   .col-m-7 {width: 58.33%;}
+   .col-m-8 {width: 66.66%;}
+   .col-m-9 {width: 75%;}
+   .col-m-10 {width: 83.33%;}
+   .col-m-11 {width: 91.66%;}
+   .col-m-12 {width: 100%;}
+
+}
+@media only screen and (min-width: 868px) {
+   /* For desktop: */
+   .col-1 {width: 8.33%;}
+   .col-2 {width: 16.66%;}
+   .col-3 {width: 25%;}
+   .col-4 {width: 33.33%;}
+   .col-5 {width: 41.66%;}
+   .col-6 {width: 50%;}
+   .col-7 {width: 58.33%;}
+   .col-8 {width: 66.66%;}
+   .col-9 {width: 75%;}
+   .col-10 {width: 83.33%;}
+   .col-11 {width: 91.66%;}
+   .col-12 {width: 100%;}
+}
+
+@media only screen and (min-width: 1268px) {
+   /* For desktop: */
+   .col-l-1 {width: 8.33%;}
+   .col-l-2 {width: 16.66%;}
+   .col-l-3 {width: 25%;}
+   .col-l-4 {width: 33.33%;}
+   .col-l-5 {width: 41.66%;}
+   .col-l-6 {width: 50%;}
+   .col-l-7 {width: 58.33%;}
+   .col-l-8 {width: 66.66%;}
+   .col-l-9 {width: 75%;}
+   .col-l-10 {width: 83.33%;}
+   .col-l-11 {width: 91.66%;}
+   .col-l-12 {width: 100%;}
+}
+/*--------------------------------------------------------------*/
+/*   bannière                                                   */
+/*--------------------------------------------------------------*/
+
+#banner {
+  display: block;
+  padding: 0px
+}
+
+/*--------------------------------------------------------------*/
+/*   menu principal                                             */
+/*--------------------------------------------------------------*/
+
+#menu {
+  background-image: url("Images/menu2019.png");
+  display: block;
+  width: 100%;
+  box-shadow: 0px 3px 3px black;
+
+}
+
+#main {
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+}
+
+/*--------------------------------------------------------------*/
+/*   footer                                                     */
+/*--------------------------------------------------------------*/
+
+
+footer {
+  display: block;
+  /*background-color: #041d36;*/
+  /*background-color: #002040;*/
+  background-image: url("Images/footer2019.png");
+  text-align: center;
+}
+
+#footer {
+  position: absolute;
+    width: 100%;
+  /*bottom: 0px;
+  left: 0px;*/
+  z-index: 2;
+}
+
+footer * {
+  display: inline-block;
+}
+
+.sponsors div {
+  vertical-align: middle;
+  display: inline-block;
+  margin: 15px;
+}
+
+#logo {
+  /*background-image: url("Images/logomines.png");*/
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#reseauxsociaux img {
+  /*height: 50px;
+  width: 50px;*/
+  display: inline-block;
+  max-width: 70px;
+}
+
+#reseauxsociaux a {
+  /*height: 50px;
+  width: 50px;*/
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  max-width: 150px;
+}
+
+#reseauxsociaux {
+  text-align: center;
+  margin: 20px 0;
+}
+
+footer h4 {
+  /*color: #ffcd47;*/
+  color: #ffe500;
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+
+#credit {
+  color: white;
+  margin: 15px 0;
+}
+
+.sponsors h4 {
+  display: block;
+}
+
+.sponsors {
+  display: inline-block;
+}
+
+.sponsor {
+  margin: 2%;
+  vertical-align: middle;
+}
+
+.sponsors, #reseauxsociaux, #contact {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.logo-max-width {
+  max-width: 150px;
+}
+
+
+/*--------------------------------------------------------------*/
+/*   navbar                                                     */
+/*--------------------------------------------------------------*/
+#menu_list li a{
+  color: black;
+}
+
+
+/*--------------------------------------------------------------*/
+/*   contenu                                                    */
+/*--------------------------------------------------------------*/
+h1{
+  color: #bb8f49;
+}
+
+h2{
+  color: #bb8f49;
+}
+
+p{
+  color: white;
+}
+
+#gala2020 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+#logo_rdv {
+  display: block;
+  margin-top:50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+/*--------------------------------------------------------------*/
+/*   acces                                                      */
+/*--------------------------------------------------------------*/
+
+.place {
+  display: block;
+  /*vertical-align: top;*/
+  margin: 20px auto;
+  max-width: 500px;
+}
+
+
+/* BENJ */
+#contenu{
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-top: 50px;
+}
+
+#contenu p{
+  font-size: 25px;
+  text-justify: auto;
+}
