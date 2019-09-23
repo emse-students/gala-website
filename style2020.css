@@ -246,6 +246,14 @@ p{
   margin-right: auto;
   width: 60%;
 }
+.img_spectacle {
+  display: block;
+  margin-top:50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  height: auto;
+}
 /*--------------------------------------------------------------*/
 /*   acces                                                      */
 /*--------------------------------------------------------------*/
