@@ -1,8 +1,22 @@
+@font-face {
+ font-family: "keepcalm";
+ src: url(/fonts/KEEPCALM-MEDIUM.TTF) format("truetype");
+}
+
+body {
+  font-family: "keepcalm";
+  background-color: white;
+  margin: auto;
+  position: relative;
+  padding: 0;
+  height: 100%;
+  background-image: url("Images/fond.png");
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Noto Sans', sans-serif;
 }
 
 a {
@@ -13,13 +27,7 @@ a:hover {
     color: #6c4c28;
 }
 
-body {
-  margin: auto;
-  position: relative;
-  padding: 0;
-  height: 100%;
-  background-image: url("Images/fond.png");
-}
+
 
 /* For mobile phones: */
 @media only screen and (max-width: 700px) {
@@ -274,6 +282,11 @@ p{
 }
 
 #contenu p{
-  font-size: 25px;
+  font-size: 20px;
   text-justify: auto;
+}
+
+hr{
+  height:1px;
+  background-color: #bb8f49;
 }
