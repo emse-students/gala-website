@@ -1,6 +1,16 @@
 @font-face {
  font-family: "keepcalm";
- src: url(/fonts/KEEPCALM-MEDIUM.TTF) format("truetype");
+ src: url(fonts/KEEPCALM-MEDIUM.TTF) format("truetype");
+}
+
+@font-face {
+ font-family: "abadi_otf";
+ src: url(fonts/ABADIMTSTD-EXTRALIGHT.otf) format("opentype");
+}
+
+@font-face {
+ font-family: "abadi_ttf";
+ src: url(fonts/ufonts.com_abadi-mt-condensed.ttf) format("truetype");
 }
 
 body {
@@ -131,22 +141,20 @@ a:hover {
 
 footer {
   display: block;
-  /*background-color: #041d36;*/
-  /*background-color: #002040;*/
-  background-image: url("Images/footer2019.png");
   text-align: center;
+  border: solid;
+  border-width: 0px;
+  border-top-width: 2px;
+  border-color: #bb8f49;
+  margin-top:80px;
 }
 
-#footer {
-  position: absolute;
-    width: 100%;
-  /*bottom: 0px;
-  left: 0px;*/
-  z-index: 2;
+footer a{
+  color: white;
 }
-
-footer * {
-  display: inline-block;
+footer a:hover{
+  color: white;
+  text-decoration:none;
 }
 
 .sponsors div {
@@ -222,6 +230,7 @@ footer h4 {
 /*--------------------------------------------------------------*/
 #menu_list li a{
   color: black;
+  font-size: 12px;
 }
 
 
@@ -230,14 +239,30 @@ footer h4 {
 /*--------------------------------------------------------------*/
 h1{
   color: #bb8f49;
+  text-align: center;
 }
 
 h2{
   color: #bb8f49;
 }
 
+h3{
+  color: white;
+  text-align: center;
+}
+
 p{
   color: white;
+}
+
+li{
+  color: white;
+  margin-left: 50px;
+  font-size: 20px;
+}
+
+#contenu a{
+  color:white;
 }
 
 #gala2020 {
@@ -262,6 +287,14 @@ p{
   width: 70%;
   height: auto;
 }
+.img_centree {
+  display: block;
+  margin-top:50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  width: auto;
+}
 /*--------------------------------------------------------------*/
 /*   acces                                                      */
 /*--------------------------------------------------------------*/
@@ -279,6 +312,7 @@ p{
   margin-left: 200px;
   margin-right: 200px;
   margin-top: 50px;
+  text-align: justify;
 }
 
 #contenu p{
