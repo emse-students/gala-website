@@ -23,47 +23,13 @@
 <body onresize="resize()" onload="resize()">
   <img class="col-12 hidden-s" id="banner" src="Images/bandeau.png">
 
-  <nav class="navbar navbar-center navbar-expand-lg navbar-light bg-light">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul id="menu_list" class="navbar-nav" style="width: 100%">
-        <li class="nav-item active" style="width: 13%; margin-left: 80px">
-          <a class="nav-link" href="accueil.html">ACCUEIL<span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item" style="width: 17%">
-          <a class="nav-link" href="qui_sommes_nous.html">QUI SOMMES NOUS?</a>
-        </li>
-        <li class="nav-item dropdown" style="width: 16%;">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: black;">
-            PROGRAMME
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="diner.html">Dîner</a>
-            <a class="dropdown-item" href="spectacle.html">Spectacle</a>
-            <a class="dropdown-item" href="soiree.html">Soirée</a>
-          </div>
-        </li>
-        <li class="nav-item" style="width: 12%">
-          <a class="nav-link" href="billeterie.html">BILLETERIE</a>
-        </li>
-        <li class="nav-item" style="width: 21%">
-          <a class="nav-link" href="hotels_acces_navettes.html">HOTELS, ACCES ET NAVETTES</a>
-        </li>
-        <li class="nav-item" style="width: 17%">
-          <a class="nav-link" href="partenaires.html">PARTENAIRES</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+  <div w3-include-html="navbar.html"></div>
 
     <div id="contenu">
       <h1>Hôtels, accès et navettes</h1>
       <hr/>
     </div>
-  </section>
+  <div w3-include-html="footer.html"></div>
 
 
 
