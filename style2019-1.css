@@ -23,14 +23,14 @@ body {
 
 /* For mobile phones: */
 @media only screen and (max-width: 700px) {
-   .hidden-s{display: none !important;}
+   .0{display: none !important;}
    .font-s-14{font-size: 14 !important;}
    .show-s{display: block !important;}
    .col-s-6 {width: 50%;}
 }
 
 @media only screen and (min-width: 700px) and (max-width: 868px) {
-   .hidden-m{display: none !important;}
+   .0{display: none !important;}
    .font-m-14{font-size: 14 !important;}
 }
 

@@ -21,6 +21,7 @@ body {
   padding: 0;
   height: 100%;
   background-image: url("Images/fond.png");
+  font-size: 16px;
 }
 
 * {
@@ -43,6 +44,10 @@ a:hover {
 @media only screen and (max-width: 700px) {
    .hidden-s{display: none !important;}
    .font-s-14{font-size: 14 !important;}
+   #contenu p{font-size: 12px !important;}
+   h1{font-size: 22px !important;}
+   h2{font-size: 20px !important;}
+   h3{font-size: 18px !important;}
    .show-s{display: block !important;}
    .col-s-6 {width: 50%;}
 }
@@ -50,6 +55,10 @@ a:hover {
 @media only screen and (min-width: 700px) and (max-width: 868px) {
    .hidden-m{display: none !important;}
    .font-m-14{font-size: 14 !important;}
+   h1{font-size: 26px !important;}
+   h2{font-size: 24px !important;}
+   h3{font-size: 22px !important;}
+   #contenu p{font-size: 14px !important;}
 }
 
 @media only screen and (min-width: 868px) {
@@ -258,7 +267,6 @@ p{
 li{
   color: white;
   margin-left: 50px;
-  font-size: 20px;
 }
 
 #contenu a{
@@ -309,8 +317,8 @@ li{
 
 /* BENJ */
 #contenu{
-  margin-left: 200px;
-  margin-right: 200px;
+  margin-left: 10%;
+  margin-right: 10%;
   margin-top: 50px;
   text-align: justify;
 }
