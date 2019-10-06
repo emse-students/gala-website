@@ -18,6 +18,13 @@
   <link rel="stylesheet" href="style2020.css" type="text/css" />
   <script src="js/w3.js"></script>
 
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+  integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+  crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+  integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+  crossorigin=""></script>
+
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 </head>
 
@@ -95,7 +102,18 @@
         <hr/>
         <p>[Ici ajouter la carte google maps avec des pointeurs sur les 3 hôtels, rajouter également le Centre de Congrès et l'École].</p>
 
+
+        <div id='mapid'>
+        </div>
+
+
+        </div>
+        <br/>
+        <br/>
+        <br/>
     </div>
+
+
 
   </section>
 
@@ -110,6 +128,26 @@
 
 <script>
   w3.includeHTML();
+</script>
+<script>
+var mymap = L.map('mapid').setView([45.428004, 4.403114],13);
+L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
+	attribution: 'Tiles &copy; Esri &mdash; Source: Esri, DeLorme, NAVTEQ, USGS, Intermap, iPC, NRCAN, Esri Japan, METI, Esri China (Hong Kong), Esri (Thailand), TomTom, 2012'
+}).addTo(mymap);
+
+
+var astoria = L.marker([45.4204,4.40808]).addTo(mymap);
+astoria.bindPopup("<b>Hôtel Astoria</b>").openPopup();
+var kyriad = L.marker([45.4418,4.40647]).addTo(mymap);
+kyriad.bindPopup("<b>Hôtel Kyriad</b>").openPopup();
+var cityloft = L.marker([45.43408,4.388697]).addTo(mymap);
+cityloft.bindPopup("<b>Hôtel CityLoft</b>").openPopup();
+var cdc = L.marker([45.428004, 4.403114]).addTo(mymap);
+cdc.bindPopup("<b>Centre des congrès</b>").openPopup();
+
+
+
+
 </script>
 
 <script type="text/javascript" src="js/side_sizing.js"></script>
