@@ -337,7 +337,7 @@ hr{
   background-color: #bb8f49;
 }
 
-#mapid { height: 350px; width: 100%; z-index: 0}
+#mapid { height: 500px; width: 100%; z-index: 0}
 
 .leaflet-control-zoom-in{color: black !important;}
 .leaflet-control-zoom-out{color: black !important;}
