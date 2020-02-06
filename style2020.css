@@ -273,6 +273,18 @@ li{
   margin-left: 50px;
 }
 
+ul{
+  color: white;
+  font-size:16px;
+  margin-left: 50px;
+}
+
+table{
+  color: white;
+  font-size:16px;
+  margin-left: 50px;
+}
+
 #contenu a{
   color:white;
 }
